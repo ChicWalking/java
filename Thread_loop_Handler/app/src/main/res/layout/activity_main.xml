@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Send Message in Main Thread:" />
+
+    <TextView
+        android:id="@+id/tvOnMainThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="@string/test_handler"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/btnHandlerpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvOnMainThread"
+        android:text="1.postRunnable" />
+
+    <Button
+        android:id="@+id/btnHandlerPostdelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnHandlerpost"
+        android:text="2.postRunnableDelay" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnHandlerPostdelay"
+        android:text="3.SendMessage" />
+
+    <Button
+        android:id="@+id/btnSendtoTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSendMessage"
+        android:text="4.Message.SentToTarget" />
+
+    <TextView
+        android:id="@+id/tvOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSendtoTarget"
+        android:text="Send Message in Other Thread:" />
+
+    <TextView
+        android:id="@+id/tvOnOtherThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvOther"
+        android:text="@string/test_handler"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvOnOtherThread"
+        android:text="1.postRunnable" />
+
+    <Button
+        android:id="@+id/btnPostDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnPost"
+        android:text="2.postRunnableDelay" />
+
+    <Button
+        android:id="@+id/btnSendMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnPostDelay"
+        android:text="3.SendMessage" />
+
+    <Button
+        android:id="@+id/btnSendToTarget2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSendMessage2"
+        android:text="4.Message.SentToTarget" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
